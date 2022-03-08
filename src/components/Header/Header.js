@@ -8,7 +8,6 @@ import close from "../../starter-code/assets/shared/icon-close.svg"
 function Header() {
     
     const [navbar, setNavbar] = useState(false)
-    const [unda, setUnda] = useState('');
 
     const handleClick = () => {
         setNavbar(!navbar);
@@ -33,7 +32,7 @@ function Header() {
                 <nav className='header-nav'>
                     <button className="hambo" onClick={handleClick}> {navbar ? (<img src={close} alt="" />) : ( <img src={hamburg} alt="" /> )}</button>
                     <ul className={`nav-list ${navbar ? "showMenu" : ""}`}>
-                        <li className={splitLocation[1] === "" ? "active" : ""}><NavLink exact to="/" onClick={handleClick} ><h3><span className='hspan'>00</span>Home</h3></NavLink></li>
+                        <li className={splitLocation[1] === "" ? "active" : ""}><NavLink  to="/" onClick={handleClick} ><h3><span className='hspan'>00</span>Home</h3></NavLink></li>
                         <li className={splitLocation[1] === "destination" ? "active" : ""}><NavLink to="/destination" onClick={handleClick}><h3><span className='hspan'>01</span>Destination</h3></NavLink></li>
                         <li className={splitLocation[1] === "crew" ? "active" : ""}><NavLink to="/crew" onClick={handleClick}><h3><span className='hspan'>02</span>Crew</h3></NavLink></li>
                         <li className={splitLocation[1] === "technology" ? "active" : ""}><NavLink to="/technology" onClick={handleClick}><h3><span className='hspan'>03</span>Technology</h3></NavLink></li>
