@@ -1,0 +1,355 @@
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+
+}
+.hspan {
+    font-weight: 700;
+    margin-inline-end: 0.5em;
+
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+}
+.header{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+    gap: 2px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+/* .header .logo {
+    margin: 0;
+    z-index: 10;
+    width: 4%;
+}
+.headline{
+    height: 0.1rem;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(231, 15%, 26%);
+    z-index: 9;
+    }
+.header-nav{ 
+    text-align: right;
+    align-items: right;
+    width: 65%;
+
+
+} */
+.head1 {
+    width: 100%;
+    padding-left: 2em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.head1 .logo{
+    width: 7%;
+    z-index: 0;
+}
+
+.head1 .headline {
+    width: 50%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid rgb(83, 81, 81);
+    top: 40%;
+    /* right:-4%; */
+    /* left: 0; */
+    z-index: 4;
+
+}
+
+.header-nav {
+    width: 100%;
+}
+.header-nav button{
+    display: none;
+}
+
+.hambo { 
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    padding-block: 5rem;
+    background: rgba(245, 245, 248, 0.055);
+    padding-inline: clamp(3rem, 10vw, 10rem);
+    --gap: 2rem;
+    backdrop-filter: blur(10px);
+    /* z-index: 9; */
+    width: 100%;
+    padding: 0 0 0 110px;
+    align-items: center;
+  
+
+}
+
+.active a{
+    border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+ }
+
+.nav-list  a {
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+
+
+
+.header .header-nav .nav-list  li {
+    padding-right: 30px;
+    outline: none;
+    
+}
+
+.nav-list li:last-child {
+    margin-right: 70px;
+}
+@media (min-width: 35em) and (max-width: 55em ) {
+    .nav-list a  span {
+        display: none;
+    }
+    .header{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        padding:0;
+    }
+   
+    .head1 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .head1 .logo{
+        width: 100%;
+     }
+    
+    .head1 .headline {
+        display: none;
+    
+    }
+    .nav-list {
+        position: fixed;
+        inset: 0 0 0 70%;
+        background: rgba(97, 96, 180, 0.055);;
+        flex-direction: column;
+        align-items: left;
+        margin-left: -100px;
+
+
+        backdrop-filter: blur(1rem);
+
+        
+
+        overflow-y: scroll;
+        overflow: hidden;
+        z-index: 9;
+
+        display: flex;
+        
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .header-nav{ 
+        position: relative;
+    }
+
+    .header-nav button {
+        display: block;
+        position: fixed;
+        right: 50px;
+        top: 35px;
+        z-index: 10;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+
+    
+    .header-nav {
+        position: relative;
+        }
+    
+    
+    .nav-list.showMenu {
+        width: 100%;
+        transform: translateX(0%);
+    
+    }
+
+    .nav-list.showMenu li a {
+        /* text-decoration: none;
+        text-transform: uppercase;
+        background: none; */
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .active a{
+        border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0);
+     }
+
+    
+
+    .nav-list li:first-child {
+        margin-top: 12rem;
+        
+    }
+    .headline{
+        display: none;
+    }
+}
+
+
+@media (max-width: 35em) {
+    .header{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        padding:0;
+    }
+
+     .head1 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .head1 .logo{
+        width: 100%;
+     }
+    
+    .head1 .headline {
+        display: none;
+    
+    }
+    .nav-list {
+        position: fixed;
+        inset: 0 0 0 70%;
+        background: rgba(97, 96, 180, 0.055);;
+        flex-direction: column;
+        align-items: left;
+        margin-left: -100px;
+
+
+        backdrop-filter: blur(1rem);
+
+        
+
+        overflow-y: scroll;
+        overflow: hidden;
+        z-index: 9;
+
+        display: flex;
+        
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .header-nav{ 
+        position: relative;
+    }
+
+    .header-nav button {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 35px;
+        z-index: 10;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+
+    
+    .header-nav {
+        position: relative;
+        }
+    
+    
+    .nav-list.showMenu {
+        width: 100%;
+        transform: translateX(0%);
+        display: block;
+        padding-left: 0;
+    
+    }
+
+    .nav-list.showMenu li a {
+        /* text-decoration: none;
+        text-transform: uppercase;
+        background: none; */
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: left;
+        
+        
+    }
+    .nav-list.showMenu li{
+        width: 138px;
+    }
+    .active a{
+        border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0);
+     }
+
+    .nav-list li:first-child {
+        margin-top: 12rem;
+        
+    }
+    .headline{
+        display: none;
+    }
+}
+
+

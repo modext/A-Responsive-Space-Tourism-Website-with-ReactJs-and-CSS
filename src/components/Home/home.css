@@ -1,0 +1,281 @@
+.home {
+    background: url("../../starter-code/assets/home/background-home-desktop.jpg") no-repeat center/cover;
+    height: calc(100vh + 1px);
+    overflow-y: auto;
+}
+.home .overlay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    position: relative;
+    top: 250px;
+    padding-bottom: 20rem;
+}
+
+.left {
+    display: grid;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 20rem;
+}
+
+
+.left .firster{
+    font-size: 2rem;
+    color: gray;
+    font-weight: 300;
+    position: relative;
+    direction: column;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: "Bellefair", sans-serif; */
+    align-items: center;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 47px;
+    letter-spacing: 4px;
+}
+.left h2 {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-family: "Bellefair", sans-serif;
+    font-size: 11.5rem;
+    text-align: left;
+    margin-left: 30px;
+}
+.left p {
+    font-size: 1.85rem;
+    color: gray;
+    text-align: left;
+    margin-left: 40px;
+    width: 88%;
+}
+
+
+.right {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-Donate {
+    background: white;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius:100%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color:black;
+    text-decoration: none;
+
+    
+    
+}
+
+.btn-Donate:hover {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+
+@media (min-width: 30em) and (max-width: 64em) {
+    .home {
+        background-image: url(../../starter-code/assets/home/background-home-mobile.jpg);
+        height: calc(100vh + 1px);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        overflow: auto;
+    
+    }
+
+    .home .overlay {
+        display: flex;
+        flex-direction: column;
+        top: 15rem;
+        padding-bottom: 2rem;
+    }
+
+    .left {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+
+    }
+    .left .firster{
+        font-size: 2rem;
+        color: gray;
+        font-weight: 300;
+        position: relative;
+        direction: column;
+        justify-content: center;
+        font-family: 'Barlow Condensed', sans-serif;
+        /* font-family: "Bellefair", sans-serif; */
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+    .left h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 10rem;
+        text-align: center;
+        font-weight: 300;
+    }
+    
+    .left p {
+        font-size: 1.7rem;
+        color: gray;
+        text-align: center;
+    }
+    
+
+
+    .btn-Donate {
+        background: white;
+        text-align: center;
+        width: 20rem;
+        height: 20rem;
+        border-radius:100%;
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Bellefair", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1;
+        color:black;
+        text-decoration: none;
+        margin-top: 0;
+    
+        
+        
+    }
+    
+    .btn-Donate:hover {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    
+}
+@media (max-width: 30em) {
+    .home {
+        background-image: url(../../starter-code/assets/home/background-home-mobile.jpg);
+        height: calc(100vh + 1px);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        overflow: scroll;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
+    
+
+    .home .overlay {
+        display: flex;
+        flex-direction: column;
+        top: 15rem;
+        padding-bottom: 2rem;
+    }
+
+    .left {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        justify-content: center;
+
+
+        padding: 0;
+
+    }
+    .left .firster{
+        font-size: 2rem;
+        color: gray;
+        font-weight: 300;
+        position: relative;
+        direction: column;
+        justify-content: center;
+        font-family: 'Barlow Condensed', sans-serif;
+        /* font-family: "Bellefair", sans-serif; */
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0px;
+        padding: 0;
+        
+    }
+    .left h2 {
+        color: white;
+        text-transform: uppercase;
+        padding: 15px 0 15px 0;
+        font-size: 7rem;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .left p {
+        font-size: 1.7rem;
+        color: gray;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+
+
+    .btn-Donate {
+        background: white;
+        text-align: center;
+        width: 20rem;
+        height: 20rem;
+        border-radius:100%;
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Bellefair", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1;
+        color:black;
+        text-decoration: none;
+        margin-top: 0;
+    
+        
+        
+    }
+    
+    .btn-Donate:hover {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    
+}

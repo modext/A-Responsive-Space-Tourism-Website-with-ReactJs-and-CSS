@@ -1,0 +1,351 @@
+
+
+/* body {
+    font-family: 'Barlow Condensed', sans-serif;
+} */
+
+
+
+.crewing {
+    background: url("../../starter-code/assets/crew/background-crew-desktop.jpg")
+    no-repeat center fixed;
+    background-size: cover;
+    justify-content: center;
+    overflow: scroll;
+}
+
+
+.crewing .pick {
+    font-size: 20px;
+    font-weight: 400;
+    top: 170px;
+    left: 150px;
+    position: relative;
+    color: white;
+    max-width: 75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.crewing .pick  .dspan {
+    font-weight: 600;
+    margin-inline-end: 1.5em;
+    color: gray;
+    letter-spacing: 3px;
+
+}
+
+.crew {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 120px;
+
+}
+
+.left-crew {
+    margin-left: 30px;
+    padding-bottom: 100px;
+
+}
+
+.left-crew h2 {
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    margin-top:-15px;
+    width: 100%;
+}
+.left-crew h3 {
+    color: gray;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
+    align-items: center;
+    margin-bottom: 2.25rem;
+
+
+}
+
+.left-crew p {
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    width: 56%;
+}
+
+.left-crew button {
+    background:none;
+    border:none;
+    margin:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 5rem;
+}
+
+.left-crew .spoton {
+    background: hsl(0, 0%, 100%);
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 5px;
+
+}
+
+
+.right-crew {
+    margin: auto;
+}
+
+.right-crew img {
+    height: 70%;
+    width: 70%;
+}
+
+
+@media (min-width: 30em) and (max-width: 64em)  {
+    .crewing {
+        background-image: url("../../starter-code/assets/crew/background-crew-tablet.jpg")
+        no-repeat center/cover;
+        height: calc(100vh + 1px);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-left: 0;
+        overflow: scroll;
+    }
+    .crewing .pick {
+        font-size: 20px;
+            top: 100px;
+            left: 0px;
+            position: relative;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 3px;
+            padding-left: 0;
+            margin-right: 0;
+            text-align: center;
+    }
+    
+    .crewing .pick  .dspan {
+        font-weight: 600;
+        margin-inline-end: 1.5em;
+        color: gray;
+        letter-spacing: 3px;
+    
+    }
+    
+    .crew {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 0 0 3rem 0;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 200px;
+    }
+    
+    .left-crew {
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    
+    .left-crew h2 {
+        color: white;
+        font-size: 3.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: "Bellefair", sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 1.5rem 0;
+    }
+    .left-crew h3 {
+        color: gray;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        font-family: "Bellefair", sans-serif;
+        font-weight: 700;
+        align-items: center;
+        margin-bottom: 2.25rem;
+        padding: 0 0 1.5rem 0;
+    
+    
+    }
+    
+    .left-crew p {
+        font-size: 1.5rem;
+        color: gray;
+        line-height: 2rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .left-crew button {
+        background:none;
+        border:none;
+        margin:0;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 0.1rem;
+        margin: 2rem 1rem  2rem 0;
+
+    }
+    
+    .left-crew .spoton {
+        background: hsl(0, 0%, 100%);
+        height: 1.1rem;
+        width: 1.1rem;
+        border-radius: 5px;
+    
+    }
+    
+    
+    .right-crew {
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+    
+    
+}
+
+@media (max-width: 30em) {
+    .crewing {
+        background-image: url("../../starter-code/assets/crew/background-crew-mobile.jpg")
+        no-repeat center/cover;
+        height: calc(100vh + 1px);
+        width: 100%;
+        padding:0;
+        overflow: scroll;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .crewing .pick {
+        font-size: 20px;
+        top: 100px;
+        left: 0px;
+        position: relative;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+        padding-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .crewing .pick  .dspan {
+        font-weight: 600;
+        margin-inline-end: 1.5em;
+        color: gray;
+        letter-spacing: 3px;
+    
+    }
+    
+    .crew {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 120px 0 0 0;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .left-crew {
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 0 3rem 0;
+    
+    }
+    
+    .left-crew h2 {
+        color: white;
+        font-size: 3.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: "Bellefair", sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 1.5rem 0;
+    }
+    .left-crew h3 {
+        color: gray;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        font-family: "Bellefair", sans-serif;
+        font-weight: 700;
+        align-items: center;
+        margin-bottom: 2.25rem;
+        padding: 0 0 1.5rem 0;
+    
+    
+    }
+    
+    .left-crew p {
+        font-size: 1.5rem;
+        color: gray;
+        line-height: 2rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .left-crew button {
+        background:none;
+        border:none;
+        margin:0;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 0.1rem;
+        margin: 2rem 1rem  2rem 0;
+
+    }
+    
+    .left-crew .spoton {
+        background: hsl(0, 0%, 100%);
+        height: 1.1rem;
+        width: 1.1rem;
+        border-radius: 5px;
+    
+    }
+    
+    
+    .right-crew {
+        margin: auto;
+    }
+    
+}

@@ -1,0 +1,517 @@
+
+/* html{
+    font-size: 62.5%;
+    overflow:auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ */
+ body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.destination {
+    background: url("../../starter-code/assets/destination/background-destination-desktop.jpg") 
+    no-repeat center/cover;
+    height: calc(100vh + 1px);
+    overflow-y: auto;
+}
+.dest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13rem;
+    position: relative;
+    top: 120px;
+    align-items: center;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-left: 18rem;
+    
+}
+
+.destination .pick {
+    font-size: 20px;
+    font-weight: 400;
+    top: 170px;
+    left: 150px;
+    position: relative;
+    color: white;
+    max-width: 75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.dspan {
+    font-weight: 600;
+    margin-inline-end: 1.5em;
+    color: gray;
+    letter-spacing: 3px;
+
+}
+
+
+.lefter img {
+    display: block;
+    width: 90%;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lefter {
+    margin-top: 40px;
+    }
+
+
+.righter {
+    display: inline-block;
+    align-items: left;
+    margin-left: 20px;
+    border-left: 0;
+    margin-top: -10px;
+    
+
+} 
+
+.righter h2 {
+    color: white;
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-family: "Bellefair", sans-serif;
+    
+    height: 100px;
+    align-items: center;
+    margin-bottom:-12px;
+    text-transform: uppercase;
+    margin-top:22px;
+}
+
+.righter p {
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 2rem;
+    margin-bottom: 20px;
+    width: 96%;
+    letter-spacing: 1px;
+}
+
+
+
+
+.destlist {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.destlist li {
+    color: white;
+    word-spacing: 0;
+    width: 170px;
+    font-size: 2rem;
+    font-family: "Bellefair", sans-serif;
+    display: block;
+    margin-right: 70px;
+    
+}
+
+.destlist li .distance, .destlist li .time{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: gray;
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    
+
+}
+
+
+
+a {
+    text-transform: uppercase;
+    color: white; 
+    padding-bottom: 0.5rem;
+    padding-left: 2px;
+    border-bottom-width: 1px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+
+}
+.righter button {
+    background:none;
+    border:none;
+    margin:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    color: white; 
+    padding-bottom: 0.5rem;
+    margin-right: 3rem;
+}
+
+.righter .spoton {
+    border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+}
+.righter .line {
+    height: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+    background-color: hsl(231, 15%, 26%);
+}
+
+
+
+@media (min-width: 30em) and (max-width: 64em)  {
+    .destination {
+        background-image: url("../../starter-code/assets/destination/background-destination-tablet.jpg") 
+        no-repeat center/cover;
+        height: calc(100vh + 1px);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        overflow: scroll;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    
+    .destination .pick {
+        font-size: 20px;
+        top: 100px;
+        left: 0px;
+        position: relative;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+        padding-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .dspan {
+        font-weight: 600;
+        margin-inline-end: 1.5em;
+        color: gray;
+        letter-spacing: 3px;
+    
+    }
+    .dest {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 3rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .lefter {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        
+
+    }
+    
+    
+    .lefter img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    
+    
+    .righter {
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 0;
+        margin-top: 0;
+        
+    
+    } 
+
+    .righter button {
+        background:none;
+        border:none;
+        margin:0;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2px;
+        color: white; 
+        padding-bottom: 0.5rem;
+        margin-right: 3rem;
+    }
+    
+    .righter .spoton {
+        border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+    }
+    .righter .line {
+        height: 0.1rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        background-color: hsl(231, 15%, 26%);
+    }
+    
+    .righter h2 {
+        color: white;
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: 5px;
+        font-family: "Bellefair", sans-serif;
+        
+        height: 100px;
+        align-items: center;
+        margin-bottom:-12px;
+        text-transform: uppercase;
+        margin-top:22px;
+    }
+    
+    .righter p {
+        font-size: 1.5rem;
+        color: gray;
+        line-height: 2rem;
+        margin-bottom: 20px;
+        width: 96%;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    
+    .destlist {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .destlist li {
+        color: white;
+        word-spacing: 0;
+        width: 170px;
+        font-size: 2rem;
+        font-family: "Bellefair", sans-serif;
+        display: block;
+        margin-right: 70px;
+        
+    }
+    
+    .destlist li .distance, .destlist li .time{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: gray;
+        display: block;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+    
+    }
+    
+    
+    
+    a {
+        text-transform: uppercase;
+        color: white; 
+        padding-bottom: 0.5rem;
+        padding-left: 2px;
+        border-bottom-width: 1px;
+        font-family: 'Barlow Condensed', sans-serif;
+    
+    
+    }
+    
+}
+
+@media (max-width: 30em) {
+    .destination {
+        background-image: url("../../starter-code/assets/destination/background-destination-mobile.jpg")
+        no-repeat center/cover;
+        height: calc(100vh + 1px);
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .destination .pick {
+            font-size: 20px;
+            top: 100px;
+            left: 0px;
+            position: relative;
+            color: white;
+            max-width: 75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 300;
+            text-align: center;
+            align-items: center
+
+    }
+    
+    .dspan {
+        font-weight: 300;
+        margin-inline-end: 1.5em;
+        color: gray;
+        letter-spacing: 3px;
+    
+    }
+    .dest {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 3rem;
+        justify-content: center;
+        margin: 0 0 0 0;
+        left: 0;
+        
+    }
+
+    .lefter {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        
+
+    }
+    
+    
+    .lefter img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    
+    
+    .righter {
+        display: inline-block;
+        text-align: center;
+
+        
+    
+    } 
+
+    .righter button {
+        align-items: center;
+        background:none;
+        border:none;
+        margin:0;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2px;
+        color: white; 
+        padding-bottom: 0.5rem;
+        margin-right: 3rem;
+    }
+    
+    .righter .spoton {
+        border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+    }
+    .righter .line {
+        height: 0.1rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        background-color: hsl(231, 15%, 26%);
+    }
+    
+    .righter h2 {
+        color: white;
+        font-size: 7rem;
+        font-weight: 300;
+        font-family: "Bellefair", sans-serif;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        text-transform: uppercase;
+        margin:20px 0 0 0;    
+        padding: 0;
+    }
+    
+    .righter p {
+        font-size: 1.5rem;
+        color: gray;
+        line-height: 2rem;
+        margin-bottom: 20px;
+        width: 90%;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    
+    .destlist {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .destlist li {
+        color: white;
+        word-spacing: 0;
+
+        font-size: 2rem;
+        font-family: "Bellefair", sans-serif;
+        display: block;
+        margin-left: 70px;
+        
+    }
+    
+    .destlist li .distance, .destlist li .time{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: gray;
+        display: block;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+    
+    }
+    
+    
+    
+    a {
+        text-transform: uppercase;
+        color: white; 
+        padding-bottom: 0.5rem;
+        padding-left: 2px;
+        border-bottom-width: 1px;
+        font-family: 'Barlow Condensed', sans-serif;
+    
+    
+    }
+}
